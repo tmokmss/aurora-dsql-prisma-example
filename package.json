@@ -1,0 +1,28 @@
+{
+  "name": "prisma-aurora-dsql-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-rds": "^3.713.0",
+    "@aws-sdk/dsql-signer": "^3.713.0",
+    "@prisma/adapter-pg": "^6.1.0",
+    "@prisma/client": "^6.0.1",
+    "@types/aws-lambda": "^8.10.146",
+    "@types/node": "^22.10.2",
+    "@types/pg": "^8.11.10",
+    "aws-cdk": "^2.173.1",
+    "aws-cdk-lib": "^2.173.1",
+    "pg": "^8.13.1",
+    "prisma": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
