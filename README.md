@@ -1,6 +1,6 @@
 # Aurora DSQL x Prisma example
 
-Detailed explanation is here (Japanese): [Aurora DSQLをPrismaで使う]()
+Detailed explanation is here (Japanese): [Aurora DSQLをPrismaで使う](https://tmokmss.hatenablog.com/entry/aurora-dsql-with-prisma-orm)
 
 ## Usage
 
