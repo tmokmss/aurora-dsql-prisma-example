@@ -22,12 +22,14 @@ export const handler: Handler = async (event, _) => {
     throw new Error('reset command is forbidden!');
   }
 
+  const cmd = ['db', 'push', '--skip-generate'].concat(options);
+
   // Currently we don't have any direct method to invoke prisma migration programmatically.
   // As a workaround, we spawn migration script as a child process and wait for its completion.
   // Please also refer to the following GitHub issue: https://github.com/prisma/prisma/issues/4703
   try {
     const exitCode = await new Promise((resolve, _) => {
-      execFile(path.resolve('./node_modules/prisma/build/index.js'), ['db', 'push', '--skip-generate'].concat(options), (error, stdout, stderr) => {
+      execFile(path.resolve('./node_modules/prisma/build/index.js'), cmd, (error, stdout, stderr) => {
         console.log(stdout);
         if (error != null) {
           console.log(`prisma db push exited with error ${error.message}`);
